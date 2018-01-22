@@ -13,6 +13,8 @@
 		E9901EEC20162CFE00A5ECE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9901EEB20162CFE00A5ECE0 /* Assets.xcassets */; };
 		E9901EEF20162CFE00A5ECE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9901EED20162CFE00A5ECE0 /* LaunchScreen.storyboard */; };
 		E9901EF220162CFE00A5ECE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9901EF120162CFE00A5ECE0 /* main.m */; };
+		E9901EFA2016349D00A5ECE0 /* PMEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = E9901EF92016349D00A5ECE0 /* PMEmployee.m */; };
+		E9901EFD201634B500A5ECE0 /* PMCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = E9901EFC201634B500A5ECE0 /* PMCompany.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E9901EEE20162CFE00A5ECE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9901EF020162CFE00A5ECE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9901EF120162CFE00A5ECE0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9901EF82016349D00A5ECE0 /* PMEmployee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMEmployee.h; sourceTree = "<group>"; };
+		E9901EF92016349D00A5ECE0 /* PMEmployee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMEmployee.m; sourceTree = "<group>"; };
+		E9901EFB201634B500A5ECE0 /* PMCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMCompany.h; sourceTree = "<group>"; };
+		E9901EFC201634B500A5ECE0 /* PMCompany.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMCompany.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		E9901EE120162CFE00A5ECE0 /* EditableTable */ = {
 			isa = PBXGroup;
 			children = (
+				E9901EFE201634BC00A5ECE0 /* Models */,
 				E9901EE220162CFE00A5ECE0 /* AppDelegate.h */,
 				E9901EE320162CFE00A5ECE0 /* AppDelegate.m */,
 				E9901EE520162CFE00A5ECE0 /* ViewController.h */,
@@ -69,6 +76,17 @@
 				E9901EF120162CFE00A5ECE0 /* main.m */,
 			);
 			path = EditableTable;
+			sourceTree = "<group>";
+		};
+		E9901EFE201634BC00A5ECE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9901EF82016349D00A5ECE0 /* PMEmployee.h */,
+				E9901EF92016349D00A5ECE0 /* PMEmployee.m */,
+				E9901EFB201634B500A5ECE0 /* PMCompany.h */,
+				E9901EFC201634B500A5ECE0 /* PMCompany.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9901EFA2016349D00A5ECE0 /* PMEmployee.m in Sources */,
 				E9901EE720162CFE00A5ECE0 /* ViewController.m in Sources */,
 				E9901EF220162CFE00A5ECE0 /* main.m in Sources */,
 				E9901EE420162CFE00A5ECE0 /* AppDelegate.m in Sources */,
+				E9901EFD201634B500A5ECE0 /* PMCompany.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
