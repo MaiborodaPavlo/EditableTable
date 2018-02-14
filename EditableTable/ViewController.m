@@ -241,6 +241,11 @@
         tempArray = [NSMutableArray arrayWithArray: destinationCompany.employees];
         [tempArray insertObject: employee atIndex: destinationIndexPath.row];
         destinationCompany.employees = tempArray;
+        
+        if ([sourceCompany.employees count] == 0) {
+            [self.companiesArray removeObject: sourceCompany];
+            [self.tableView deleteSections: [NSIndexSet indexSetWithIndex: sourceIndexPath.section] withRowAnimation: UITableViewRowAnimationFade];
+        }
     }
     
     [self.tableView reloadData];
